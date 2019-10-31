@@ -10,9 +10,11 @@ import delItem
 def main():
     inputChar=""
     print("""
-    something 1
-    item 2
-    crap 3
+    1. Add New Item(s): 
+    2. Display Item Record(s): 
+    3. Search Item Infomation: 
+    4. Modify Item Record(s): 
+    5. Delete Item Record(s): 
     """)
 
     inputChar = input("Please select a item by enter a char: ")
