@@ -12,3 +12,14 @@ def testfunc2(j):
     total = j ** j
     return total
 
+def menu(i):
+    switch={
+        "0": "test",
+        "1": "addItem",
+        "2": "DispItem",
+        "3": "SearItem",
+        "4": "ModItem",
+        "5": "DelItem"
+        }
+    return switch.get(i, "Invalid Input")
+print(menu("1"))

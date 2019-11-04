@@ -1,1 +1,4 @@
 #delItem.py
+
+def main():
+
