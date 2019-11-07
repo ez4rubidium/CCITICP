@@ -1,4 +1,10 @@
 #test.py
+import addItem
+import dispItem
+import searItem
+import modItem
+import delItem
+
 testValue = 25
 testString = "This is a test."
 testChar = "F"
@@ -13,13 +19,19 @@ def testfunc2(j):
     return total
 
 def menu(i):
-    switch={
-        "0": "test",
-        "1": "addItem",
-        "2": "DispItem",
-        "3": "SearItem",
-        "4": "ModItem",
-        "5": "DelItem"
+    switch = {
+        0 : addItem.main,
+        1 : addItem.main,
+        2 : dispItem.main,
+        3 : searItem.main,
+        4 : modItem.main,
+        5 : delItem.main
         }
-    return switch.get(i, "Invalid Input")
-print(menu("1"))
+    switch[i]()
+
+
+def main():
+    menu(int(input("No. : ")))
+    pass
+
+#main()
