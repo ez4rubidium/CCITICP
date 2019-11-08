@@ -20,18 +20,21 @@ def testfunc2(j):
 
 def menu(i):
     switch = {
-        0 : addItem.main,
-        1 : addItem.main,
-        2 : dispItem.main,
-        3 : searItem.main,
-        4 : modItem.main,
-        5 : delItem.main
+        "0" : addItem.main,
+        "1" : addItem.main,
+        "2" : dispItem.main,
+        "3" : searItem.main,
+        "e" : modItem.main,
+        "q" : delItem.main
         }
-    switch[i]()
+    try:
+        switch[i]()
+    except KeyError as err:
+        print(err)
 
 
 def main():
-    menu(int(input("No. : ")))
+    menu(input("Input : "))
     pass
 
 #main()

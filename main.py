@@ -8,13 +8,13 @@ import delItem
 
 def menu(i):
     switch = {
-        0 : test.main,
-        1 : addItem.main,
-        2 : dispItem.main,
-        3 : searItem.main,
-        4 : modItem.main,
-        5 : delItem.main,
-        6 : quit
+        "0" : test.main,
+        "1" : addItem.main,
+        "2" : dispItem.main,
+        "3" : searItem.main,
+        "r" : modItem.main,
+        "e" : delItem.main,
+        "q" : exit
         }
     switch[i]()
 
@@ -28,18 +28,16 @@ def main():
         3. Search Item Infomation: 
         4. Modify Item Record(s): 
         5. Delete Item Record(s): 
+        q. Quit the program: 
         """)
 
         inputChar = input("Please select a item by enter a char: ")
-        x = 0
+        
         try:
-            val = int(inputChar)
-            
-        except ValueError as err:
+            x = 0
+            menu(inputChar)
+        except KeyError as err:
             x = 1
-            print(err)
-    
-    print(val)
-    menu(val) 
+            print("Invaild Input ", err)
 
 main()
