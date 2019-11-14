@@ -1,40 +1,23 @@
 #test.py
-import addItem
-import dispItem
-import searItem
-import modItem
-import delItem
-
-testValue = 25
-testString = "This is a test."
-testChar = "F"
-testList = [2, 4, 6, 8, 10]
-
-def testFunc(i):
-    total = i + i ** 10
-    return total
-
-def testfunc2(j):
-    total = j ** j
-    return total
-
-def menu(i):
-    switch = {
-        "0" : addItem.main,
-        "1" : addItem.main,
-        "2" : dispItem.main,
-        "3" : searItem.main,
-        "e" : modItem.main,
-        "q" : delItem.main
-        }
-    try:
-        switch[i]()
-    except KeyError as err:
-        print(err)
-
 
 def main():
-    menu(input("Input : "))
-    pass
+    print("Hello world!")
+# read the data file in as a list
+#with open("test.txt", "r") as inF:
+#    data_list = inF.readlines()
+#    inF.close()
+# test it ...
+#print(data_list)
+ 
+#print('-'*60)
 
-#main()
+#t = 9
+# remove list items from index 3 to 5 (inclusive)
+#del data_list[t:t+9]
+# test it ...
+#print(data_list)
+ 
+## write the changed data (list) to a file
+#fout = open("MyData2.txt", "w")
+#fout.writelines(data_list)
+#fout.close()

@@ -36,4 +36,4 @@ def writedata(file_name):
         
     outFile.close()
 
-main()
+#main()

@@ -12,8 +12,8 @@ def menu(i):
         "1" : addItem.main,
         "2" : dispItem.main,
         "3" : searItem.main,
-        "r" : modItem.main,
-        "e" : delItem.main,
+        "4" : modItem.main,
+        "5" : delItem.main,
         "q" : exit
         }
     switch[i]()

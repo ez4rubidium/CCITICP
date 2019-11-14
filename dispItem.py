@@ -34,4 +34,4 @@ def readdata(file_name):
         
     inFile.close()
 
-main()
+#main()
