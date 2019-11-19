@@ -2,7 +2,7 @@
 
 def main():
     print(__file__.split('/')[-1])
-    def main():
+def main1():
     number=int(input("What record do you want to update?"))
     step1(number)
 def step1(number):
