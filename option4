@@ -1,1 +1,2 @@
 #option4
+number=int(input("What record do you want to update?"))
