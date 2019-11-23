@@ -186,7 +186,8 @@ j=input("Do you continue to modify?")
 if j=="Yes":
     main1()
 elif j=="NO":
-      print("return a main meun")       
+      print("return a main meun")
+      main()
 #finish
     
 
