@@ -181,6 +181,11 @@ def readandwrite(a):
     else:
         print("error")
 main1()
+j=input("Do you continue to modify?")
+if j=="Yes":
+    main()
+elif j=="NO":
+      print("return a main meun")
 #finish
     
 
