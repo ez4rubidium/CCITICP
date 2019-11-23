@@ -10,7 +10,8 @@ def main():
     if j=="Yes":
         main()
     elif j=="No":
-        print("return back")
+        print()
+        main1()
 def read(a):
     a=a-1001
     b=open("inventory.txt","r")
@@ -185,21 +186,5 @@ def readandwrite(a):
         e.close()
     else:
         print("error")
-main1()
 main()
 
-
-    
-    
-
-            
-
-        
-
-
-    
-
-        
-
-        
-    
