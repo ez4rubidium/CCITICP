@@ -187,4 +187,5 @@ def readandwrite(a):
     else:
         print("error")
 main()
+#have not change file name : check.txt should change to inventory.txt
 
