@@ -180,7 +180,7 @@ def readandwrite(a):
         e.close()
     else:
         print("error")
-main()
+main1()
 #finish
     
 
