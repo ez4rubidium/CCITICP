@@ -3,6 +3,7 @@
 def main():
     print(__file__.split('/')[-1])
 def main1():
+    main()
     a=int(input("What record number do you want to update?"))
     read(a)
     readandwrite(a)
