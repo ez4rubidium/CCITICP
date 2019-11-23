@@ -183,9 +183,9 @@ def readandwrite(a):
 main1()
 j=input("Do you continue to modify?")
 if j=="Yes":
-    main()
+    main1()
 elif j=="NO":
-      print("return a main meun")
+      print("return a main meun")       
 #finish
     
 
