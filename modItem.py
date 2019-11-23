@@ -1,12 +1,16 @@
 #modItem.py
 
-def main():
-    print(__file__.split('/')[-1])
 def main1():
-    main()
+    print(__file__.split('/')[-1])
+def main():
     a=int(input("What record number do you want to update?"))
     read(a)
     readandwrite(a)
+    j=input("Do you want to modify? (Yes/No)")
+    if j=="Yes":
+        main()
+    elif j=="No":
+        print("return back")
 def read(a):
     a=a-1001
     b=open("inventory.txt","r")
@@ -182,16 +186,20 @@ def readandwrite(a):
     else:
         print("error")
 main1()
-j=input("Do you continue to modify?")
-if j=="Yes":
-    main1()
-elif j=="NO":
-      print("return a main meun")
-      main()
-#finish
+main()
+
+
+    
     
 
             
 
         
+
+
+    
+
         
+
+        
+    
