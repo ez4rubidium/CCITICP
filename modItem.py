@@ -186,7 +186,7 @@ def readandwrite(a):
     else:
         print("error")
 main()
-
+#finish
 
     
     
