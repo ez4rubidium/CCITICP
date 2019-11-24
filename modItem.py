@@ -6,11 +6,10 @@ def main():
     a=int(input("What record number do you want to update?"))
     read(a)
     readandwrite(a)
-    j=input("Do you want to modify? (Yes/No)")
+    j=input("Do you want to continue modify? (Yes/No)")
     if j=="Yes":
         main()
     elif j=="No":
-        print()
         main1()
 def read(a):
     a=a-1001
@@ -42,7 +41,7 @@ def readandwrite(a):
     x=z*10
     o=input("What items in this record you want to change?")
     if o=="Record number":
-        b=open("check.txt","r")
+        b=open("inventory.txt","r")
         c=b.readlines()
         b.close()
         c[x]=input("What information you want to update?")
@@ -51,13 +50,13 @@ def readandwrite(a):
         count=0
         for n in c:
             count=count+1
-        e=open("check.txt","w")
+        e=open("inventory.txt","w")
         while index<count:
             e.write(c[index])
             index=index+1
         e.close()
     elif o=="Item name":
-        b=open("check.txt","r")
+        b=open("inventory.txt","r")
         c=b.readlines()
         b.close()
         x=x+1
@@ -67,13 +66,13 @@ def readandwrite(a):
         count=0
         for n in c:
             count=count+1
-        e=open("check.txt","w")
+        e=open("inventory.txt","w")
         while index<count:
             e.write(c[index])
             index=index+1
         e.close()
     elif o=="Item number":
-        b=open("check.txt","r")
+        b=open("inventory.txt","r")
         c=b.readlines()
         b.close()
         x=x+2
@@ -83,13 +82,13 @@ def readandwrite(a):
         count=0
         for n in c:
             count=count+1
-        e=open("check.txt","w")
+        e=open("inventory.txt","w")
         while index<count:
             e.write(c[index])
             index=index+1
         e.close()
     elif o=="Category":
-        b=open("check.txt","r")
+        b=open("inventory.txt","r")
         c=b.readlines()
         b.close()
         x=x+3
@@ -99,13 +98,13 @@ def readandwrite(a):
         count=0
         for n in c:
             count=count+1
-        e=open("check.txt","w")
+        e=open("inventory.txt","w")
         while index<count:
             e.write(c[index])
             index=index+1
         e.close()
     elif o=="Quantity":
-        b=open("check.txt","r")
+        b=open("inventory.txt","r")
         c=b.readlines()
         b.close()
         x=x+4
@@ -115,13 +114,13 @@ def readandwrite(a):
         count=0
         for n in c:
             count=count+1
-        e=open("check.txt","w")
+        e=open("inventory.txt","w")
         while index<count:
             e.write(c[index])
             index=index+1
         e.close()
     elif o=="Weight":
-        b=open("check.txt","r")
+        b=open("inventory.txt","r")
         c=b.readlines()
         b.close
         x=x+5
@@ -131,13 +130,13 @@ def readandwrite(a):
         count=0
         for n in c:
             count=count+1
-        e=open("check.txt","w")
+        e=open("inventory.txt","w")
         while index<count:
             e.write(c[index])
             index=index+1
         e.close()
     elif o=="Recipient":
-        b=open("check.txt","r")
+        b=open("inventory.txt","r")
         c=b.readlines()
         b.close()
         x=x+6
@@ -147,13 +146,13 @@ def readandwrite(a):
         count=0
         for n in c:
             count=count+1
-        e=open("check.txt","w")
+        e=open("inventory.txt","w")
         while index<count:
             e.write(c[index])
             index=index+1
         e.close()
-    elif o=="Final destination":
-        b=open("check.txt","r")
+    elif o=="Final Destination":
+        b=open("inventory.txt","r")
         c=b.readlines()
         b.close()
         x=x+7
@@ -163,13 +162,13 @@ def readandwrite(a):
         count=0
         for n in c:
             count=count+1
-        e=open("check.txt","w")
+        e=open("inventory.txt","w")
         while index<count:
             e.write(c[index])
             index=index+1
         e.close()
     elif o=="Delivery status":
-        b=open("check.txt","r")
+        b=open("inventory.txt","r")
         c=b.readlines()
         b.close()
         x=x+8
@@ -179,7 +178,7 @@ def readandwrite(a):
         count=0
         for n in c:
             count=count+1
-        e=open("check.txt","w")
+        e=open("inventory.txt","w")
         while index<count:
             e.write(c[index])
             index=index+1
@@ -187,5 +186,14 @@ def readandwrite(a):
     else:
         print("error")
 main()
-#have not change file name : check.txt should change to inventory.txt
 
+
+    
+    
+
+            
+
+        
+
+
+    
