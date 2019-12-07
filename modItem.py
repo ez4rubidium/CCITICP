@@ -7,8 +7,8 @@ def main():
     a=int(input("What record number do you want to update?"))
     read(a)
     readandwrite(a)
-    j=input("Do you want to continue modify? (Yes/No)")
-    if j=="Yes":
+    j=input("Do you want to continue modify? (y/n)")
+    if j=="y":
         main()
 def read(a):
     a=a-1001
