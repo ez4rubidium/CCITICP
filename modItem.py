@@ -3,14 +3,13 @@
 def main1():
     print(__file__.split('/')[-1])
 def main():
+    main1()
     a=int(input("What record number do you want to update?"))
     read(a)
     readandwrite(a)
     j=input("Do you want to continue modify? (Yes/No)")
     if j=="Yes":
         main()
-    elif j=="No":
-        main1()
 def read(a):
     a=a-1001
     b=open("inventory.txt","r")
