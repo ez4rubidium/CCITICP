@@ -34,4 +34,6 @@ def readdata(file_name):
         
     inFile.close()
 
-#main()
+if __name__ == '__main__':
+    main()
+    

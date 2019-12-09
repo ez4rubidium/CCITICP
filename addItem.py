@@ -36,4 +36,6 @@ def writedata(file_name):
         
     outFile.close()
 
-#main()
+if __name__ == '__main__':
+    main()
+    
