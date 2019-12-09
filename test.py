@@ -1,7 +1,22 @@
 #test.py
+from random import randint
+from time import sleep
 
 def main():
-    print("Hello world!")
+    target_phrase = 'Hello, World!'
+    build_phrase = ''
+    i = 0
+    while i < len(target_phrase): 
+        guess_letter = chr(randint(32, 126))   
+        print(build_phrase + guess_letter)
+        if guess_letter == target_phrase[i]:
+            build_phrase += guess_letter
+            i += 1    
+        sleep(.002)
+if __name__ == '__main__':
+    main()
+            
+print("Hello world!")
 # read the data file in as a list
 #with open("test.txt", "r") as inF:
 #    data_list = inF.readlines()

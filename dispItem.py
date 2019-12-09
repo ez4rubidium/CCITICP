@@ -2,7 +2,7 @@
 
 def main():
     print(__file__.split('/')[-1])
-    fileName = input("Enter an INPUT file name for reading:")
+    fileName = "inventory.txt" #input("Enter an INPUT file name for reading:")
     readdata(fileName)
 
 def readdata(file_name):
@@ -36,4 +36,3 @@ def readdata(file_name):
 
 if __name__ == '__main__':
     main()
-    

@@ -9,7 +9,7 @@ def find(rNum):
     try:
         tLine = data_list.index(serLine)
     except ValueError as err:
-            print(err)
+            #print(err)
             print("Item Not Found")
             tLine = None
     return tLine
@@ -34,8 +34,8 @@ def del_Line(tLine):
         temp.writelines(data_list)
         temp.close()
     try:
-        del_list = data_list[tLine : tLine + 9]
-        del data_list[tLine : tLine + 9]
+        del_list = data_list[tLine : tLine + 10]
+        del data_list[tLine : tLine + 10]
         print("-"*60)
         print(del_list)
         print("-"*60)
@@ -45,7 +45,7 @@ def del_Line(tLine):
             dFile.close()
         writeChanges(data_list)
     except TypeError as err:
-        print(err)
+        #print(err)
         print("No changes made")
     
 
@@ -58,10 +58,16 @@ def main():
         rNum = input("Enter a Record Number: ")
         tLine = find(rNum)
         del_Line(tLine)
-        inChar = input("Do you want delete another itam record? (y/n): ")
-        if inChar == "n":
-            os.remove("temp.txt")
-            repeat = 0
+        ask =1 
+        while ask == 1:
+            inChar = input("Do you want delete another itam record? (y/n): ")
+            if inChar == "n":
+                os.remove("temp.txt")
+                ask = 0
+                repeat = 0
+            elif inChar == "y":
+                ask = 0
+
 
 if __name__ == '__main__':
     main()
