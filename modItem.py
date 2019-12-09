@@ -1,5 +1,4 @@
 #modItem.py
-
 def main1():
     print(__file__.split('/')[-1])
 def main():
@@ -184,12 +183,14 @@ def readandwrite(a):
         e.close()
     else:
         print("error")
-main()
+if __name__ == '__main__':
+    main()
+
+    
+
 #finish
 
-    
-    
-
+ 
             
 
         
