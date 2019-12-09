@@ -184,15 +184,8 @@ def readandwrite(a):
         e.close()
     else:
         print("error")
-main()
+if __name__ == '__main__':
+    main()
+    
 #finish
-
-    
-    
-
-            
-
-        
-
-
-    
+ 
