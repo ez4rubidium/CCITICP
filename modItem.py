@@ -2,6 +2,7 @@
 def main1():
     print(__file__.split('/')[-1])
 def main():
+    main1()
     recNum=int(input("What record number do you want to update?"))
     read(recNum)
     readandwrite(recNum)
@@ -182,9 +183,6 @@ def readandwrite(recNum):
         readthings.close()
     else:
         print("error")
-main()
-
-
 if __name__ == '__main__':
     main()
 
